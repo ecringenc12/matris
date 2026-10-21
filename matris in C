@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int matris[3][3];
+	int i,a;
+	int sayac=0;
+	for(i=0;i<=2;i++)
+	{
+		for(a=0;a<=2;a++)
+		{
+			printf("[%d][%d].matris degerini gir-> ",i,a);
+			scanf("%d",&matris[i][a]);
+		}
+		printf("\n");
+	}
+	for(i=0;i<=2;i++)
+	{
+		for(a=i;a<=i;a++)
+		{
+			sayac=sayac+matris[i][a];
+		}
+	}
+	printf("Alinan kosegen matris degerleri toplami-> %d",sayac);
+	
+
+	return 0;
+}
